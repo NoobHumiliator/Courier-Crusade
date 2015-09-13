@@ -1,0 +1,196 @@
+// Dota Units File
+"DOTAItems"
+{
+	"Version"	"1"	
+        "item_branches"
+        {
+          "Weight"     "5"
+          "Strength"   "1"
+          "Agility"    "1"
+          "Intellect"   "1"
+        } 
+        "item_tango"
+        {
+          "Weight"     "2"
+          "Heal"       "1"   
+        }
+         "item_flask"
+        {
+          "Weight"     "10" 
+          "Heal"       "4" 
+        }
+        "item_circlet"
+        {
+          "Weight"     "16"
+          "Strength"   "2"
+          "Agility"    "2"
+          "Intellect"  "2"
+        } 
+        "item_gauntlets"
+	{
+	  "Weight"     "15"
+          "Strength"   "3"	
+	}
+        "item_slippers"
+	{
+	    "Weight"     "15"
+            "Agility"    "3" 
+	}
+        "item_mantle"
+	{
+          "Weight"     "15"
+	  "Intellect"  "3"
+	}
+         "item_belt_of_strength"
+	{
+	   "Weight"     "45"
+          "Strength"   "6"
+	}
+        "item_boots_of_elves"
+	{
+	    "Weight"     "45"
+            "Agility"    "6" 
+	}
+       "item_robe"
+	{
+	    "Weight"     "45"
+            "Intellect"  "6"
+	}
+        "item_ogre_axe"
+	{
+	  "Weight"     "100"
+          "Strength"   "10"
+	}
+          "item_staff_of_wizardry"
+	{
+	    "Weight"     "100"
+            "Intellect"  "10"
+	}
+       "item_blade_of_alacrity"
+	{
+	   "Weight"     "100"
+           "Agility"    "10"
+	}
+        "item_ultimate_orb"
+	{
+	   "Weight"     "210"
+           "Agility"    "10"
+           "Strength"   "10"
+           "Intellect"  "10"
+	}
+        "item_gloves"
+	{
+	  "Weight"     "55"
+	  "Speed"      "20"
+	}
+        "item_eagle"
+	{
+	   "Weight"     "300"
+           "Agility"    "25"
+	}
+        "item_reaver"
+	{
+	   "Weight"     "300"
+           "Strength"    "25"
+	}
+        "item_relic"
+	{
+	  "Weight"     "380"
+          "Damage"	"60"
+	}
+        "item_mystic_staff"
+	{
+	    "Weight"     "270"
+            "Intellect"  "25"
+	}
+        "item_blades_of_attack"
+	{
+	   "Weight"     "45"
+           "Damage"	"9"
+	}
+        "item_chainmail"
+	{
+	   "Weight"     "55"
+           "Armor"	"5"	
+	}
+       "item_claymore"
+	{
+	   "Weight"     "140"
+           "Damage"	"21"
+	}
+         "item_broadsword"
+	{
+	   "Weight"     "120"
+           "Damage"	"18"		
+	}
+        "item_mithril_hammer"
+	{
+	   "Weight"     "160"
+           "Damage"	"24"	
+	}
+        "item_platemail"
+	{
+           "Weight"     "140"
+           "Armor"	"10"
+	}
+        "item_quarterstaff"
+	{
+	   "Weight"     "90"
+           "Damage"	"10"
+           "Speed"	"10"
+	}
+        "item_ring_of_protection"
+	{
+	   "Weight"     "20"
+           "Armor"	"3"
+	}
+        "item_hyperstone"
+	{
+           "Weight"     "200"
+           "Speed"      "55"
+	}
+          "item_demon_edge"
+	{
+           "Weight"     "240"
+           "Damage"	"46"
+	}
+          "item_blink_datadriven"
+        {
+         }
+          "item_blink_datadriven"
+        {
+        }
+           "item_black_king_bar_datadriven"
+        {
+        }  
+         "item_dagon_datadriven"
+         {
+         } 
+         "item_dagon_2_datadriven"
+          {
+          }
+           "item_dagon_3_datadriven"
+          {
+          }  
+          "item_dagon_4_datadriven"
+          {
+          }  
+           "item_dagon_5_datadriven"
+          {
+          }  
+           "item_rod_of_atos_datadriven"
+          {
+           }
+          "item_sphere_datadriven"
+          {
+          }
+           "item_witch_potion"
+          {
+          }
+           "item_boots_datadriven"
+          {
+          }
+          "item_sobi_mask_datadriven"
+          {
+          }    
+}//Ö÷À¨ºÅ

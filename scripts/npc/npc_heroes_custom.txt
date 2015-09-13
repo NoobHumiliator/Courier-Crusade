@@ -1,0 +1,131 @@
+// Dota Heroes File
+// NOTE: This isn't for creating new heroes, this is for taking a currently existing hero as a template and overriding
+// the specified key-value combinations.  Use override_hero <hero_to_override> for this.
+"DOTAHeroes"
+{
+         "npc_dota_hero_for_player"
+	{
+		"override_hero"			              "npc_dota_hero_centaur"
+		"AbilityLayout"				       "4"
+                "Model"                                        "models/props_gameplay/donkey.vmdl"
+                "HeroID"			               "113"
+                "Enabled"			               "1"
+                "AttackCapabilities"		               "DOTA_UNIT_CAP_NO_ATTACK"
+		"Ability1"					""
+		"Ability2"					""	
+		"Ability3"					""
+                "Ability4"					""
+                "Ability7"					""
+                "MovementSpeed"				       "190"		// Speed.
+                "StatusHealth"				       "100"		// Base health.
+		"StatusHealthRegen"			        "0"		// Health regeneration rate.
+		"StatusMana"				       "100"			// Base mana.
+		"StatusManaRegen"			       "0.2"		// Mana regeneration rate.
+	}
+          "npc_dota_good_hero"
+	{
+                "override_hero"				"npc_dota_hero_sven"
+                "ModelScale" 				        "1.8"
+		// Abilities
+		//-------------------------------------------------------------------------------------------------------------
+		"Ability1"				"hero_arcane_orb_datadriven"						        // Ability 1
+		"Ability2"				""							// Ability 2
+		"Ability3"				""							// Ability 3
+		"Ability4"				""							// Ability 4
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"			    "0"											// Physical protection.
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"20"									// Damage range min.
+		"AttackDamageMax"			"20"									// Damage range max.
+		"AttackRate"				"1.7"									// Speed of attack.
+		"AttackAnimationPoint"		        "0.5"									// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	        "600"									// Range within a target can be acquired.
+		"AttackRange"				"320"									// Range within a target can be attacked.
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"0"									// Base strength
+		"AttributeStrengthGain"		"0"									// Strength bonus per level.
+		"AttributeBaseIntelligence"	"0"									// Base intelligence
+		"AttributeIntelligenceGain"	"0"									// Intelligence bonus per level.
+		"AttributeBaseAgility"		"0"									// Base agility
+		"AttributeAgilityGain"		"0"									// Agility bonus per level.
+
+		// Status
+		//-------------------------------------------------------------------------------------------------------------
+                "StatusHealth"				"50000"
+		"StatusHealthRegen"			"3.0"									// Health regeneration rate.
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementSpeed"				"290"									// Speed.
+		"MovementTurnRate"			"0.6"									// Turning rate.
+		
+
+		// Bounds
+		//-------------------------------------------------------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_FILLER"
+		"HealthBarOffset"			"350"
+                "VisionDaytimeRange"		"1600"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.	
+	}
+         "npc_dota_bad_hero"
+	{
+	        "override_hero"				"npc_dota_hero_axe"
+                "ModelScale" 				        "1.8"
+		// Abilities
+		//-------------------------------------------------------------------------------------------------------------
+		"Ability1"				"hero_arcane_orb_datadriven"						        // Ability 1
+		"Ability2"				""							// Ability 2
+		"Ability3"				""							// Ability 3
+		"Ability4"				""							// Ability 4
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"			    "0"											// Physical protection.
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"20"									// Damage range min.
+		"AttackDamageMax"			"20"									// Damage range max.
+		"AttackRate"				"1.7"									// Speed of attack.
+		"AttackAnimationPoint"		        "0.5"									// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	        "600"									// Range within a target can be acquired.
+		"AttackRange"				"320"									// Range within a target can be attacked.
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"0"									// Base strength
+		"AttributeStrengthGain"		"0"									// Strength bonus per level.
+		"AttributeBaseIntelligence"	"0"									// Base intelligence
+		"AttributeIntelligenceGain"	"0"									// Intelligence bonus per level.
+		"AttributeBaseAgility"		"0"									// Base agility
+		"AttributeAgilityGain"		"0"									// Agility bonus per level.
+
+		// Status
+		//-------------------------------------------------------------------------------------------------------------
+                "StatusHealth"				"50000"
+		"StatusHealthRegen"			"3.0"									// Health regeneration rate.
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementSpeed"				"290"									// Speed.
+		"MovementTurnRate"			"0.6"									// Turning rate.
+		
+
+		// Bounds
+		//-------------------------------------------------------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_FILLER"
+		"HealthBarOffset"			"350"
+                "VisionDaytimeRange"		"1600"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.	
+	}
+}

@@ -1,0 +1,1868 @@
+// Dota Units File
+"DOTAUnits"
+{
+	"Version"	"1"
+         "npc_dummy_blank"
+	{
+		// General
+		//
+		"BaseClass" "npc_dota_base_additive" // Class of entity of link to.
+		"Model" "models/development/invisiblebox.vmdl" // Model.
+		"SoundSet" "Creep_Good_Range" // Name of sound set.
+		"Level" "0"
+		"UnitLabel" "healing_ward"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1" "" // Ability 1.
+		"Ability2" "" // Ability 2.
+		"Ability3" "" // Ability 3.
+		"Ability4" "" // Ability 4.
+		"Ability5" "" // Ability 5.
+		"Ability6" "" // Ability 6 - Extra.
+		"Ability7" "" // Ability 7 - Extra.
+		"Ability8" "" // Ability 8 - Extra.
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical" "0" // Physical protection.
+		"MagicalResistance" "0" // Magical protection.
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities" "DOTA_UNIT_CAP_NO_ATTACK" // Type of attack - melee, ranged, etc.
+		"AttackDamageMin" "0" // Damage range min.
+		"AttackDamageMax" "0" // Damage range max.
+		"AttackDamageType" "DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate" "1" // Speed of attack.
+		"AttackAnimationPoint" "0.5" // Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange" "800" // Range within a target can be acquired.
+		"AttackRange" "500" // Range within a target can be attacked.
+		"ProjectileModel" "" // Particle system model for projectile.
+		"ProjectileSpeed" "900" // Speed of projectile.
+		// Attributes
+		//----------------------------------------------------------------
+		"AttributePrimary" "DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength" "0" // Base strength
+		"AttributeStrengthGain" "0" // Strength bonus per level.
+		"AttributeBaseIntelligence" "0" // Base intelligence
+		"AttributeIntelligenceGain" "0" // Intelligence bonus per level.
+		"AttributeBaseAgility" "0" // Base agility
+		"AttributeAgilityGain" "0" // Agility bonus per level.
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP" "0" // Experience earn.
+		"BountyGoldMin" "0" // Gold earned min.
+		"BountyGoldMax" "0" // Gold earned max.
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName" "DOTA_HULL_SIZE_SMALL" // Hull type used for navigation/locomotion.
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND" // Type of locomotion - ground, air
+		"MovementSpeed" "450" // Speed
+		"MovementTurnRate" "10" // Turning rate.
+		"FollowRange" "250" // Distance to keep when following
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth" "1" // Base health.
+		"StatusHealthRegen" "0" // Health regeneration rate.
+		"StatusMana" "0" // Base mana.
+		"StatusManaRegen" "0" // Mana regeneration rate.
+		// Team
+		//----------------------------------------------------------------
+		"TeamName" "DOTA_TEAM_GOODGUYS" // Team name.
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationshipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange" "0" // Range of vision during day light.
+		"VisionNighttimeRange" "0" // Range of vision at night time.
+		// Bots
+		//----------------------------------------------------------------
+		"AttackDesire" "1.5" // How much bots want to attack them vs other non-hero things
+	}
+        "npc_dummy"
+	{
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/development/invisiblebox.vmdl"
+		
+		"Ability1"					"ability_dummy"
+		
+		"Level"						"1"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+
+		"StatusHealth"				"1"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		"VisionDaytimeRange"		"0"
+		"VisionNighttimeRange"		"0"
+	}	
+        "npc_purple_wizard"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/courier/donkey_crummy_wizard_2014/donkey_crummy_wizard_2014.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                  
+                "HasInventory"				"1"
+                "AbilityLayout"				       "6"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					""			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.4"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+         "npc_winter_dragon"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/courier/baby_winter_wyvern/baby_winter_wyvern.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "AbilityLayout"				        "6"
+                "precache"
+                {
+                  "particle_folder" "particles/units/heroes/hero_ancient_apparition"
+                  "soundfile"  "soundevents/game_sounds_heroes/game_sounds_ancient_apparition.vsndevts"
+                 }
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"winter_dragon_ice_path"			// Ability 2
+		"Ability3"					"cold_feet"			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+          "npc_doom"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/courier/doom_demihero_courier/doom_demihero_courier.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				"1"
+		// Abilities
+		//----------------------------------------------------------------
+                "AbilityLayout"				       "6"
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"doom_bringer_scorched_earth_datadriven"			// Ability 2
+		"Ability3"					"doom_burrowstrike_datadriven"			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+          "npc_minipudge"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/courier/minipudge/minipudge.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				"1"
+		// Abilities
+		//----------------------------------------------------------------
+                "AbilityLayout"				       "6"
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"pudge_meat_hook_datadriven"			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+          "npc_mechjaw"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/courier/mechjaw/mechjaw.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				"1"
+		// Abilities
+		//----------------------------------------------------------------
+                "AbilityLayout"				       "6"
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					""			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+                "HealthBarOffset"           "250"
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+          "npc_imp"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/courier/imp/imp.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				"1"
+		// Abilities
+		//----------------------------------------------------------------
+                "AbilityLayout"				       "6"
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					""			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"335"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"270"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+         "npc_blue_turtle"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/nexon_turtle_09_blue/nexon_turtle_09_blue.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				         "1"
+		// Abilities
+		//----------------------------------------------------------------
+                "AbilityLayout"				       "6"
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"blue_turtle_ice_path"			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"210"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+         "npc_blue_rabbit"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/arneyb_rabbit/arneyb_rabbit.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+		// Abilities
+		//----------------------------------------------------------------
+                "AbilityLayout"				       "6"
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"faster_spawn_action_leap"			// Ability 2
+		"Ability3"					"nether_swap_datadriven"			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"410"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+          "npc_beaverknight"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/beaverknight_s2/beaverknight_s2.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "AbilityLayout"				        "6"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"ability_knight_cleave"			// Ability 2
+		"Ability3"					"standard_spawn_action_leap"			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+          "npc_caonima"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/livery_llama_courier/livery_llama_courier.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "precache"
+                {
+                "particle_folder" "particles/units/heroes/hero_bloodseeker"
+                 }
+                "AbilityLayout"				       "6"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"standard_spawn_action_leap"			// Ability 2
+		"Ability3"					"caonima_thirst"			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"522"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+	      "VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+         "npc_throe"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/throe/throe.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "AbilityLayout"				         "6"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"standard_spawn_action_leap"			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+	        "VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+        "npc_janjou"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/courier_janjou/courier_janjou.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "AbilityLayout"				         "6"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"standard_spawn_action_leap"			// Ability 2
+		"Ability3"					"speed_aura_datadriven"			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+          "npc_redkita"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/courier_mvp_redkita/courier_mvp_redkita.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "AbilityLayout"				        "6"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"standard_spawn_action_leap"			// Ability 2
+		"Ability3"					"ball_lightning_datadriven"			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+                "VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+         "npc_courier_audience"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/courier_mvp_redkita/courier_mvp_redkita.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"courier_animation"			// Ability 1
+		"Ability2"					""			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					""			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"270"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.2"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+	        "VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+        "npc_maze_trap"
+	{
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/development/invisiblebox.vmdl"		
+		"Ability1"					"ability_dummy"
+		"Ability2"                                      "maze_fire"
+		"Level"						"1"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+                                                        
+		"StatusHealth"				"1"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		"VisionDaytimeRange"		"0"
+		"VisionNighttimeRange"		"0"
+	}
+        "npc_maze_wall"	
+	{
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/props_tree/dire_tree005.vmdl"
+		"ModelScale" 				        "1"
+		
+		"Ability1"					"ability_dummy_prop"
+		
+		"Level"						"1"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+
+		"StatusHealth"				"1"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		"VisionDaytimeRange"		"0"
+		"VisionNighttimeRange"		"0"
+	}
+	
+	"npc_maze_guard"	
+	{
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/shadowshaman/shadowshaman_totem.vmdl"
+		"ModelScale" 				        "1.6"
+		
+		"Ability1"					"snake_dance"
+		
+		"Level"						"5"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+
+		"StatusHealth"				"1"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		"VisionDaytimeRange"		"0"
+		"VisionNighttimeRange"		"0"
+	}
+        "npc_maze_basket"	
+	{
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/props_structures/midas_throne/basket_big.vmdl"
+		"ModelScale" 				        "1.7"
+		"Ability1"					"ability_dummy_prop"
+		
+		"Level"						"5"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+                "BoundsHullName"                 "DOTA_HULL_SIZE_SMALL"
+		"StatusHealth"				"1"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		"VisionDaytimeRange"		"0"
+		"VisionNighttimeRange"		"0"
+	}
+        "npc_maze_wall_tec"	
+	{
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/items/rattletrap/battletrap_cog/battletrap_cog.vmdl"
+		"ModelScale" 				        "2.2"
+		
+		"Ability1"					"ability_dummy_prop"
+		
+		"Level"						"1"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+
+		"StatusHealth"				"1"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		"VisionDaytimeRange"		"0"
+		"VisionNighttimeRange"		"0"
+	}
+        "bomber_bomb"							
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/heroes/techies/fx_techies_remotebomb.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"0"			// Name of sound set.
+		"Level"						"1"
+		"ModelScale"				"1.2"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"bomb_passive"			// Ability 1
+		"Level"						"1"
+		"AttackCapabilities"		 "DOTA_UNIT_CAP_NO_ATTACK"
+		"MovementCapabilities"		 "DOTA_UNIT_CAP_MOVE_NONE"
+
+		"StatusHealth"				"1"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		"VisionDaytimeRange"		"0"
+		"VisionNighttimeRange"		"0"
+	}
+         "stasis_trap"							
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/heroes/techies/fx_techiesfx_stasis.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"0"			// Name of sound set.
+		"Level"						"1"
+		"ModelScale"				"1.2"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"stasis_trap_passive"			// Ability 1
+		"Level"						"1"
+		"AttackCapabilities"		 "DOTA_UNIT_CAP_NO_ATTACK"
+		"MovementCapabilities"		 "DOTA_UNIT_CAP_MOVE_NONE"
+
+		"StatusHealth"				"1"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		"VisionDaytimeRange"		"0"
+		"VisionNighttimeRange"		"0"
+	}
+         "stasis_trap_precache"							
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/techies/bigshot/fx_bigshot_stasis.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"0"			// Name of sound set.
+		"Level"						"1"
+		"ModelScale"				"1.2"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"stasis_trap_passive"			// Ability 1
+		"Level"						"1"
+		"AttackCapabilities"		 "DOTA_UNIT_CAP_NO_ATTACK"
+		"MovementCapabilities"		 "DOTA_UNIT_CAP_MOVE_NONE"
+
+		"StatusHealth"				"1"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		"VisionDaytimeRange"		"0"
+		"VisionNighttimeRange"		"0"
+	}
+          "npc_red_witch"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/babka_bewitcher/babka_bewitcher.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "AbilityLayout"				       "6"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"witch_kiss_voodoo_datadriven"			// Ability 2
+		"Ability3"					"witch_potion_datadriven"			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+                "VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+         "npc_bookwyrm"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/bookwyrm/bookwyrm.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "AbilityLayout"				        "6"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"bookwyrm_fiends_grip_datadriven"			// Ability 2
+		"Ability3"					"load_drain_datadriven"			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+                "VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+         "npc_death"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/boooofus_courier/boooofus_courier.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "AbilityLayout"				       "6"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"death_spin"			// Ability 2
+		"Ability3"					"reapers_scythe_datadriven"			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+                "VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+        "npc_chameleon"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/defense4_radiant/defense4_radiant.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "AbilityLayout"				        "6"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"chameleon_wind_walk_datadriven"			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+                "VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+        "npc_spider"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/itsy/itsy.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "AbilityLayout"				       "6"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"spider_web_datadriven"			// Ability 2
+		"Ability3"					"ultimate_blink"			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+                "VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+          "npc_phoe"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/guardians_of_justice_phoe/guardians_of_justice_phoe.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "AbilityLayout"				       "6"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"blue_turtle_ice_path"			// Ability 2
+		"Ability3"					"standard_spawn_action_leap"			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+                "VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+        "npc_snail"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/snail/courier_snail.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "AbilityLayout"				       "6"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					""			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"170"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"200"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+                "VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+         "npc_mystery"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/echo_wisp/echo_wisp.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "AbilityLayout"				       "6"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"mystery_walk_datadriven"			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"200"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+                "VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+        "npc_maze_fire_wall"
+	{
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/development/invisiblebox.vmdl"		
+		"Ability1"					"ability_dummy"
+		"Ability2"                                      "maze_fire_wall"
+		"Level"						"1"
+		"AttackCapabilities"		         "DOTA_UNIT_CAP_NO_ATTACK"
+		"MovementCapabilities"		         "DOTA_UNIT_CAP_MOVE_NONE"
+                                                        
+		"StatusHealth"				"1"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0"
+		
+		"VisionDaytimeRange"		       "200"
+		"VisionNighttimeRange"		       "200"
+	}
+       "maze_haste_rune"							
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/props_gameplay/rune_haste01.mdl"	// Model.
+		
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"0"			// Name of sound set.
+		"Level"						"1"
+		"ModelScale"				"1.2"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"rune_modifier_haste"			// Ability 1
+		"Ability2"					""			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"			// Damage range min.
+		"AttackDamageMax"			"0"			// Damage range max.	
+		"AttackRate"				"1.0"		// Speed of attack.
+		"AttackAnimationPoint"		"0.0"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"0"			// Range within a target can be acquired.
+		"AttackRange"				"0"			// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			"0"			// Speed of projectile.		   
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"522"			// Speed.
+		"MovementTurnRate"			"4.0"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.0"		// Health regeneration rate.
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"400"		// Range of vision during day light.
+		"VisionNighttimeRange"		"400"		// Range of vision at night time.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	}
+	
+	"maze_power_rune"							
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/props_gameplay/rune_doubledamage01.mdl"	// Model.
+		
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"0"			// Name of sound set.
+		"Level"						"1"
+		"ModelScale"				"1.2"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"rune_modifier_power"			// Ability 1
+		"Ability2"					""			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"			// Damage range min.
+		"AttackDamageMax"			"0"			// Damage range max.	
+		"AttackRate"				"1.0"		// Speed of attack.
+		"AttackAnimationPoint"		"0.0"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"0"			// Range within a target can be acquired.
+		"AttackRange"				"0"			// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			"0"			// Speed of projectile.		   
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"522"			// Speed.
+		"MovementTurnRate"			"4.0"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.0"		// Health regeneration rate.
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"400"		// Range of vision during day light.
+		"VisionNighttimeRange"		"400"		// Range of vision at night time.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	}
+	
+	"maze_item_rune"							
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/props_gameplay/rune_illusion01.mdl"	// Model.
+		
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"0"			// Name of sound set.
+		"Level"						"1"
+		"ModelScale"				"1.2"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"rune_modifier_item"			// Ability 1
+		"Ability2"					""			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"			// Damage range min.
+		"AttackDamageMax"			"0"			// Damage range max.	
+		"AttackRate"				"1.0"		// Speed of attack.
+		"AttackAnimationPoint"		"0.0"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"0"			// Range within a target can be acquired.
+		"AttackRange"				"0"			// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			"0"			// Speed of projectile.		   
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"522"			// Speed.
+		"MovementTurnRate"			"4.0"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.0"		// Health regeneration rate.
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"400"		// Range of vision during day light.
+		"VisionNighttimeRange"		"400"		// Range of vision at night time.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	}
+	
+	"maze_regeneration_rune"							
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/props_gameplay/rune_regeneration01.mdl"	// Model.
+		
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"0"			// Name of sound set.
+		"Level"						"1"
+		"ModelScale"				"1.2"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"rune_modifier_regeneration"			// Ability 1
+		"Ability2"					""			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"			// Damage range min.
+		"AttackDamageMax"			"0"			// Damage range max.	
+		"AttackRate"				"1.0"		// Speed of attack.
+		"AttackAnimationPoint"		"0.0"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"0"			// Range within a target can be acquired.
+		"AttackRange"				"0"			// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			"0"			// Speed of projectile.		   
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"522"			// Speed.
+		"MovementTurnRate"			"4.0"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.0"		// Health regeneration rate.
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"400"		// Range of vision during day light.
+		"VisionNighttimeRange"		"400"		// Range of vision at night time.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	}
+	
+	"maze_useful_item_rune"							
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/props_gameplay/rune_invisibility01.mdl"	// Model.
+		
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"0"			// Name of sound set.
+		"Level"						"1"
+		"ModelScale"				"1.2"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"rune_modifier_useful_item"			// Ability 1
+		"Ability2"					""			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"			// Damage range min.
+		"AttackDamageMax"			"0"			// Damage range max.	
+		"AttackRate"				"1.0"		// Speed of attack.
+		"AttackAnimationPoint"		"0.0"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"0"			// Range within a target can be acquired.
+		"AttackRange"				"0"			// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			"0"			// Speed of projectile.		   
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"522"			// Speed.
+		"MovementTurnRate"			"4.0"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.0"		// Health regeneration rate.
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"400"		// Range of vision during day light.
+		"VisionNighttimeRange"		"400"		// Range of vision at night time.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	}
+        "npc_tinker_bot"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/items/courier/tinkbot/tinkbot.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "AbilityLayout"				        "6"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"tinker_rearm_datadriven"			// Ability 2
+		"Ability3"					"tinker_laser_datadriven"			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+                "VisionDaytimeRange"		"2200"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+        "npc_mech"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/courier/courier_mech/courier_mech.vmdl"	// Model.
+		"BaseClass"					"npc_dota_creature"
+		"SoundSet"					"n_creep_Melee"
+		"GameSoundsFile"			        "soundevents/game_sounds_creeps.vsndevts"
+		"Level"						"1"
+		"ModelScale" 				        "1.6"
+                "HasInventory"				        "1"
+                "AbilityLayout"				        "6"
+                 "precache"
+                {
+                  "particle_folder" "particles/units/heroes/hero_rattletrap"
+                  "soundfile"  "soundevents/game_sounds_heroes/game_sounds_rattletrap.vsndevts"
+                 }
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"ability_fly"			// Ability 1
+		"Ability2"					"mech_hookshot"			// Ability 2
+		"Ability3"					"tinker_laser_datadriven"			// Ability 3
+		"Ability4"					""			// Ability 4
+                "Ability5"					"ability_transfer_items"			// Ability 4
+                "Ability6"					"change_courier_cooldown"			// Ability 4
+                "Ability7"					"ability_check_load"			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				       "1"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"		
+
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"40"
+		"HealthBarOffset"			"200"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"335"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.2"		// Health regeneration rate.
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"0.4"		// Mana regeneration rate.		 
+		
+		// Vision
+		//----------------------------------------------------------------
+                "VisionDaytimeRange"		"2200"		// Range of vision during day light.
+	 	"VisionNighttimeRange"		"1600"		// Range of vision at night time.
+	}
+}//Ö÷À¨ºÅ

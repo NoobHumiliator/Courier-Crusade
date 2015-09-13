@@ -1,0 +1,119 @@
+// Dota Units File
+"DOTAUnits"
+{
+	"Version"	"1"	
+      
+         "npc_winter_dragon"
+	{										
+		"Model"						"models/courier/baby_winter_wyvern/baby_winter_wyvern.vmdl"
+                "FlyModel"					"models/courier/baby_winter_wyvern/baby_winter_wyvern_flying.vmdl"
+                "SlotNumber"                                    "5"
+                "RatedLoad"                                     "95"		
+	}
+         "npc_blue_turtle"
+	{										
+		"Model"						"models/items/courier/nexon_turtle_09_blue/nexon_turtle_09_blue.vmdl"
+                "FlyModel"					"models/items/courier/nexon_turtle_09_blue/nexon_turtle_09_blue_flying.vmdl"
+                "SlotNumber"                                    "6"	
+                "RatedLoad"                                     "600"
+	}
+        "npc_blue_rabbit"
+	{										
+		"Model"						"models/items/courier/arneyb_rabbit/arneyb_rabbit.vmdl"	
+                "FlyModel"					"models/items/courier/arneyb_rabbit/arneyb_rabbit_flying.vmdl"
+                "SlotNumber"                                    "4"
+                "RatedLoad"                                     "50"
+	}
+        "npc_beaverknight"
+	{										
+		"Model"						"models/items/courier/beaverknight/beaverknight.vmdl"	
+                "FlyModel"					"models/items/courier/beaverknight/beaverknight_flying.vmdl"
+                "SlotNumber"                                    "5"
+                "RatedLoad"                                     "95"	
+	}
+         "npc_caonima"
+	{										
+		"Model"						"models/items/courier/livery_llama_courier/livery_llama_courier.vmdl"	
+                "FlyModel"					"models/items/courier/livery_llama_courier/livery_llama_courier_flying.vmdl"
+                "SlotNumber"                                    "4"
+                "RatedLoad"                                     "50"
+	}
+         "npc_doom"
+        {
+                "FlyModel"					"models/courier/doom_demihero_courier/doom_demihero_courier_flying.vmdl"
+                "SlotNumber"                                    "5"
+                "RatedLoad"                                     "95"
+         }
+          "npc_minipudge"
+        {
+                "FlyModel"					"models/courier/minipudge/minipudge_flying.vmdl"
+                "SlotNumber"                                    "5"
+                "RatedLoad"                                     "95"
+         }     
+          "npc_redkita"
+         {
+                "FlyModel"					"models/items/courier/courier_mvp_redkita/courier_mvp_redkita_flying.vmdl"
+                "SlotNumber"                                    "5"
+                "RatedLoad"                                     "95"
+         }
+          "npc_red_witch"
+         {
+                "FlyModel"					"models/items/courier/babka_bewitcher/babka_bewitcher_flying.vmdl"
+                "SlotNumber"                                    "5"
+                "RatedLoad"                                     "95"
+         }
+          "npc_bookwyrm"
+         {
+                "FlyModel"					"models/items/courier/bookwyrm/bookwyrm_flying.vmdl"
+                "SlotNumber"                                    "5"
+                "RatedLoad"                                     "70"
+         }
+         "npc_death"
+         {
+                "FlyModel"					"models/items/courier/boooofus_courier/boooofus_courier_flying.vmdl"
+                "SlotNumber"                                    "5"
+                "RatedLoad"                                     "95"
+         }
+          "npc_chameleon"
+         {
+                "FlyModel"					"models/items/courier/defense4_radiant/defense4_radiant_flying.vmdl"
+                "SlotNumber"                                    "5"
+                "RatedLoad"                                     "95"
+         }
+         "npc_spider"
+         {
+                "FlyModel"					"models/items/courier/itsy/itsy_flying.vmdl"
+                "SlotNumber"                                    "5"
+                "RatedLoad"                                     "95"
+         }
+          "npc_phoe"
+         {
+                "FlyModel"					"models/items/courier/guardians_of_justice_phoe/guardians_of_justice_phoe_flying.vmdl"
+                "SlotNumber"                                    "5"
+                "RatedLoad"                                     "95"
+         }
+          "npc_snail"
+         {
+                "FlyModel"					"models/items/courier/snail/courier_snail_flying.vmdl"
+                "SlotNumber"                                    "6"
+                "RatedLoad"                                     "9999"
+         }
+           "npc_mystery"
+         {
+                "FlyModel"					"models/items/courier/echo_wisp/echo_wisp_flying.vmdl"
+                "SlotNumber"                                    "4"
+                "RatedLoad"                                     "70"
+         }
+         "npc_tinker_bot"
+         {
+                "FlyModel"					"models/items/courier/tinkbot/tinkbot_flying.vmdl"
+                "SlotNumber"                                    "5"
+                "RatedLoad"                                     "95"
+         }
+         "npc_janjou"
+          {
+                "FlyModel"					"models/items/courier/courier_janjou/courier_janjou_flying.vmdl"
+                "SlotNumber"                                    "5"
+                "RatedLoad"                                     "95"
+         }
+}//Ö÷À¨ºÅ

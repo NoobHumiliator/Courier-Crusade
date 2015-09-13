@@ -1,0 +1,1393 @@
+
+// Dota Abilities Override File
+"DOTAAbilities"
+{
+	"Version"		"1"
+        "item_branches"
+	{										
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_gameplay/branch.mdl"
+		
+		// Item Info
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"50"
+		"ItemShopTags"					"agi;int;str"
+		"ItemQuality"					"component"
+		"ItemAliases"					"gg branch;iron branch"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"1"
+			}
+		}
+	}
+        "item_staff_of_wizardry"
+	{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"					"1000"
+		"ItemShopTags"					"int"
+		"ItemQuality"					"component"
+		"ItemAliases"					"staff of wizardry"
+                 "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"10"
+			} 
+		}
+	}
+        "item_broadsword"
+	{
+															// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1200"
+		"ItemShopTags"					"damage"
+		"ItemQuality"					"component"
+		"ItemAliases"					"broadsword"
+		"SideShop"					"1"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"18"
+			}
+		}
+	}
+        "item_gauntlets"
+	{
+													
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"					"150"
+		"ItemShopTags"					"str"
+		"ItemQuality"					"component"
+		"ItemAliases"					"gauntlets of strength"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"		"3"
+			}
+		}
+	}
+        "item_circlet"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"						"20"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"					"165"
+		"ItemShopTags"					"agi;int;str"
+		"ItemQuality"					"component"
+		"ItemAliases"					"circlet"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"2"
+			}
+		}
+	}
+        "item_tango"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"44"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"Model"							"models/props_gameplay/tango.mdl"
+		"Effect"						"dropped_tango"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_TREE | DOTA_UNIT_TARGET_CUSTOM"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_CUSTOM"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"165"
+		"AbilityCastPoint"				"0.0"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"					"25"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemAliases"					"tango"
+		"ItemStackable"					"1"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"		               	"1"
+		"SideShop"						"0"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"total_heal"			"115"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"total_heal_ward_tooltip"			"230"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cast_range_ward"			"450"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"buff_duration"			"16.0"
+			}
+		}
+	}
+        "item_slippers"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"14"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"					"150"
+		"ItemShopTags"					"agi"
+		"ItemQuality"					"component"
+		"ItemAliases"					"slippers of agility"
+		"SideShop"					"1"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_agility"			"3"
+			}
+		}
+	}
+        "item_mantle"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"15"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"150"
+		"ItemShopTags"					"int"
+		"ItemQuality"					"component"
+		"ItemAliases"					"mantle of intelligence"
+		"SideShop"						"1"
+                 "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"3"
+			}
+		}
+	}
+        "item_belt_of_strength"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"17"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"					"450"
+		"ItemShopTags"					"str"
+		"ItemQuality"					"component"
+		"ItemAliases"					"belt of strength"
+		"SideShop"						"1"
+                 "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"		"6"
+			}
+		}
+	}
+        "item_boots_of_elves"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"18"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"450"
+		"ItemShopTags"					"agi"
+		"ItemQuality"					"component"
+		"ItemAliases"					"band of elvenskin"
+		"SideShop"						"1"
+                 "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_agility"			"6"
+			}
+		}
+	}
+       "item_robe"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"19"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"450"
+		"ItemShopTags"					"int"
+		"ItemQuality"					"component"
+		"ItemAliases"					"robe of the magi"
+		"SideShop"						"1"
+                 "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"6"
+			}
+		}
+	}
+        "item_ogre_axe"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"21"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"					"1000"
+		"ItemShopTags"					"str"
+		"ItemQuality"					"component"
+		"ItemAliases"					"ogre club"
+                 "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"		"10"
+			}
+		}
+	}
+       "item_blade_of_alacrity"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"22"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"
+		"ItemShopTags"					"agi"
+		"ItemQuality"					"component"
+		"ItemAliases"					"blade of alacrity"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_agility"			"10"
+			}
+		}
+	}
+        "item_ultimate_orb"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"24"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"					"2100"
+		"ItemShopTags"					"agi;int;str"
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					"ultimate orb"
+		"SideShop"					"1"
+		"SecretShop"					"1"
+                 "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"10"
+			}
+		}
+	}
+        "item_gloves"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"25"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"
+		"ItemShopTags"					"attack_speed"
+		"ItemQuality"					"component"
+		"ItemAliases"					"gloves of haste"
+		"SideShop"						"1"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"20"
+			}
+		}
+	}
+        "item_eagle"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"52"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3200"
+		"ItemShopTags"					"agi"
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					"eaglesong"
+		"SecretShop"					"1"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_agility"			"25"
+			}
+		}
+	}
+        "item_reaver"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"53"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3000"
+		"ItemShopTags"					"str"
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					"reaver"
+		"SecretShop"					"1"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"		"25"
+			}
+		}
+	}
+        "item_relic"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"54"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3800"
+		"ItemShopTags"					"damage"
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					"sacred relic"
+		"SecretShop"					"1"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"60"
+			}
+		}
+	}
+        "item_hyperstone"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"55"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"2000"
+		"ItemShopTags"					"attack_speed"
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					"hyperstone"
+		"SecretShop"					"1"
+                 "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"55"
+			}
+		}
+	}
+        "item_mystic_staff"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"58"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"2700"
+		"ItemShopTags"					"int"
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					"mystic staff"
+		"SecretShop"					"1"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"25"
+			}
+		}
+	}
+        "item_blades_of_attack"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"2"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"420"
+		"ItemShopTags"					"damage;tutorial"
+		"ItemQuality"					"component"
+		"ItemAliases"					"blades of attack"
+		"SideShop"						"1"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			       "9"
+			}
+		}
+	}
+        "item_chainmail"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"4"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"550"
+		"ItemShopTags"					"armor"
+		"ItemQuality"					"component"
+		"ItemAliases"					"chainmail"
+		"SideShop"						"1"
+                 "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"5"
+			}
+		}
+	}
+         "item_claymore"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1400"
+		"ItemShopTags"					"damage"
+		"ItemQuality"					"component"
+		"ItemAliases"					"claymore"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"21"
+			}
+		}
+	}
+        "item_mithril_hammer"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"8"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1600"
+		"ItemShopTags"					"damage"
+		"ItemQuality"					"component"
+		"ItemAliases"					"mithril hammer"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"24"
+			}
+		}
+	}
+        "item_platemail"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"9"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1400"
+		"ItemShopTags"					"armor"
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					"platemail"
+		"SecretShop"					"1"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"10"
+			}
+		}
+	}
+        "item_quarterstaff"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"10"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"875"
+		"ItemShopTags"					"damage;attack_speed"
+		"ItemQuality"					"component"
+		"ItemAliases"					"quarterstaff"
+		"SideShop"						"1"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"10"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_speed"			"10"
+			}
+		}
+	}
+        "item_ring_of_protection"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"12"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"200"
+		"ItemShopTags"					"armor"
+		"ItemQuality"					"component"
+		"ItemAliases"					"rop;ring of protection"
+		"SideShop"						"0"
+		
+		// Sound
+		//-------------------------------------------------------------------------------------------------------------			
+		"UIPickupSound"					"Item.PickUpRingShop"
+		"UIDropSound"					"Item.DropRingShop"
+		"WorldDropSound"				"Item.DropRingWorld"
+                 "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_armor"			"3"
+			}
+		}
+	}
+        "item_hyperstone"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"55"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"2000"
+		"ItemShopTags"					"attack_speed"
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					"hyperstone"
+		"SecretShop"					"1"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"55"
+			}
+		}
+	}
+        "item_demon_edge"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"51"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"2400"
+		"ItemShopTags"					"damage"
+		"ItemQuality"					"secret_shop"
+		"ItemAliases"					"demon edge"
+		"SecretShop"					"1"
+                "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"46"
+			}
+		}
+	}
+        "item_courier"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_flying_courier"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	//Items
+	"item_abyssal_blade"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_aegis"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_ancient_janggo"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_arcane_boots"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_armlet"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_assault"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_band_of_elvenskin"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_basher"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_bfury"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_black_king_bar"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_blink"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_bloodstone"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_boots"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_bottle"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_bracer"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_buckler"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_butterfly"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_cheese"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_clarity"
+	{ 
+	   "ItemPurchasable"				        "0"
+	   "ItemDroppable"					"0"
+	}
+	"item_cloak"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_dagon"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_dagon_2"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_dagon_3"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_dagon_4"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_dagon_5"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_desolator"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_diffusal_blade"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_diffusal_blade_2"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_dust"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_energy_booster"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_ethereal_blade"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_cyclone"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_gem"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_gem_of_true_sight"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_ghost"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_ghost_scepter"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_greater_clarity"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_greater_crit"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_hand_of_midas"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_headdress"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_heart"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_heavens_halberd"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_helm_of_iron_will"
+	{
+	   "ItemPurchasable"				"0"
+	   "ItemDroppable"					"0"
+	}
+	"item_helm_of_the_dominator"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_hood_of_defiance"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_invis_sword"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_javelin"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_lesser_crit"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_lifesteal"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_maelstrom"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_magic_stick"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_magic_wand"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_manta"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_mask_of_madness"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_medallion_of_courage"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_mekansm"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_mjollnir"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_monkey_king_bar"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_necronomicon"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_necronomicon_2"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_necronomicon_3"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_null_talisman"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_oblivion_staff"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_orb_of_venom"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_orchid"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_pers"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_phase_boots"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_pipe"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_point_booster"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_poor_mans_shield"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_power_treads"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_quelling_blade"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_radiance"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_rapier"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_refresher"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_ring_of_aquila"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_ring_of_basilius"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_ring_of_health"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_ring_of_regen"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_rod_of_atos"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_salve"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_sange"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_sange_and_yasha"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_satanic"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_shadow_amulet"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_sheepstick"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_shivas_guard"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_skadi"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_slippers_of_halcyon"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_smoke_of_deceit"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_sobi_mask"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_soul_booster"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_soul_ring"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_sphere"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_stout_shield"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_talisman_of_evasion"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_tango_single"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_tombstone"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_tpscroll"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_tranquil_boots"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_travel_boots"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_ultimate_scepter"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_urn_of_shadows"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_vanguard"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_veil_of_discord"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_vitality_booster"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_vladmir"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_void_stone"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_ward_observer"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_ward_sentry"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_wraith_band"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+	"item_yasha"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+        "item_blade_mail"
+        {
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+        }
+        "item_force_staff"
+	{
+		"ItemPurchasable"				"0"
+		"ItemDroppable"					"0"
+	}
+}
